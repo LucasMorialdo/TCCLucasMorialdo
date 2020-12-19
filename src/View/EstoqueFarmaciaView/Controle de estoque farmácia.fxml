@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerFarmacia.ControleEstoqueFarmaciaController">
+   <children>
+      <TableView fx:id="tabelaID" prefHeight="700.0" prefWidth="1200.0">
+        <columns>
+          <TableColumn fx:id="colunaID" prefWidth="300.0" text="ID" />
+          <TableColumn fx:id="colunaNome" prefWidth="300.0" text="Nome" />
+            <TableColumn fx:id="colunaQuantidade" prefWidth="300.0" text="Quantidade" />
+            <TableColumn fx:id="colunaInfoGerais" prefWidth="300.0" text="Informações Gerais" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cbPesquisarPor" layoutX="64.0" layoutY="714.0" prefHeight="30.0" prefWidth="190.0" promptText="Pesquisar por..." />
+      <TextField fx:id="txtPesquisa" layoutX="64.0" layoutY="744.0" prefHeight="30.0" prefWidth="190.0" />
+      <Button fx:id="btPesquisarItens" layoutX="270.0" layoutY="744.0" mnemonicParsing="false" text="Pesquisar" />
+      <Button fx:id="btAdicionarItens" layoutX="402.0" layoutY="744.0" mnemonicParsing="false" onAction="#abreCadastroFarmacia" text="Adicionar itens novos" />
+      <Button fx:id="btAlterarItens" layoutX="600.0" layoutY="744.0" mnemonicParsing="false" onAction="#abreAtualizaFarmacia" text="Alterar itens existentes" />
+      <Button fx:id="btExcluirItens" layoutX="795.0" layoutY="744.0" mnemonicParsing="false" onAction="#deletaAlimentos" text="Excluir itens" />
+      <Button fx:id="btAtualizarTabela" layoutX="917.0" layoutY="744.0" mnemonicParsing="false" onAction="#preencheTabela" text="Atualizar tabela" />
+      <Button fx:id="btGerarPdf" layoutX="1064.0" layoutY="744.0" mnemonicParsing="false" onAction="#gerarPdf" text="Gerar PDF" />
+   </children>
+</AnchorPane>

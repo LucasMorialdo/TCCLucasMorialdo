@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaFuncionarioAcessoAdmController">
+   <children>
+      <Button fx:id="btGerenciamentoDeAnimais" layoutX="201.0" layoutY="111.0" mnemonicParsing="false" onAction="#abreGerenciamentoAnimais" text="Gerenciamento de Animais" />
+      <Button fx:id="btEstoqueFarmacia" layoutX="227.0" layoutY="228.0" mnemonicParsing="false" onAction="#abreEstoqueFarmacia" text="Estoque (Farmácia)" />
+      <Button fx:id="btEstoqueAlimento" layoutX="224.0" layoutY="169.0" mnemonicParsing="false" onAction="#abreEstoqueAlimentos" text="Estoque (Alimentos)" />
+      <Button fx:id="btSolicitaServicos" layoutX="209.0" layoutY="285.0" mnemonicParsing="false" onAction="#abreSolicitacoesServicos" text="Solicitações de serviços" />
+      <Button fx:id="btLogout" layoutX="263.0" layoutY="343.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Button fx:id="btFuncoesAdm" layoutX="474.0" layoutY="343.0" mnemonicParsing="false" onAction="#funcoesAdm" text="Funções ADM" />
+      <Text layoutX="23.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interface Funcionário Acesso Adm">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

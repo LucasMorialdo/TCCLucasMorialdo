@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerFuncionarios.AtualizaCamposFuncionariosController">
+   <children>
+      <Label layoutX="81.0" layoutY="54.0" text="Nome">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="94.0" text="Email">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="133.0" text="Tipo de perfil">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="173.0" text="CPF">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="212.0" text="Telefone 1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="252.0" text="Telefone 2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="292.0" text="Cidade">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="332.0" text="Bairro">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="372.0" text="Rua">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="412.0" text="Número">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="208.0" layoutY="54.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtEmail" layoutX="208.0" layoutY="94.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtCpf" layoutX="208.0" layoutY="173.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtTelefone1" layoutX="208.0" layoutY="212.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtTelefone2" layoutX="208.0" layoutY="252.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtCidade" layoutX="208.0" layoutY="292.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtBairro" layoutX="208.0" layoutY="332.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtRua" layoutX="208.0" layoutY="372.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtNumero" layoutX="208.0" layoutY="412.0" prefHeight="30.0" prefWidth="190.0" />
+      <Button fx:id="btAtualizar" layoutX="93.0" layoutY="463.0" mnemonicParsing="false" onAction="#alterarDados" text="Atualizar dados" />
+      <Button fx:id="btClearForm" layoutX="277.0" layoutY="463.0" mnemonicParsing="false" onAction="#clearForm" text="Limpar campos" />
+      <ComboBox fx:id="cbTipoPerfil" layoutX="208.0" layoutY="133.0" prefHeight="30.0" prefWidth="190.0" />
+   </children>
+</AnchorPane>

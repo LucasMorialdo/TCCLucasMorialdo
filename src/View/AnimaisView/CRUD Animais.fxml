@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerAnimais.GerenciamentoAnimaisController">
+   <children>
+      <TabPane prefHeight="800.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Cadastro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="324.0" layoutY="141.0" text="Nome">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtNome" layoutX="503.0" layoutY="140.0" prefHeight="30.0" prefWidth="190.0" />
+                        <Label layoutX="161.0" layoutY="30.0" prefHeight="110.0" prefWidth="880.0" text="Cadastro de novos animais">
+                           <font>
+                              <Font size="70.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtEspecie" layoutX="503.0" layoutY="190.0" prefHeight="30.0" prefWidth="190.0" />
+                        <TextField fx:id="txtRaca" layoutX="503.0" layoutY="242.0" prefHeight="30.0" prefWidth="190.0" />
+                        <ComboBox fx:id="cbNecessidades" layoutX="546.0" layoutY="335.0" prefHeight="30.0" prefWidth="150.0" />
+                        <ComboBox fx:id="cbTemperamento" layoutX="548.0" layoutY="381.0" prefHeight="30.0" prefWidth="150.0" />
+                        <ComboBox fx:id="cbSociabilidade" layoutX="548.0" layoutY="426.0" prefHeight="30.0" prefWidth="150.0" />
+                        <Label layoutX="325.0" layoutY="191.0" text="Espécie">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="325.0" layoutY="243.0" text="Raça">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="325.0" layoutY="336.0" text="Necessidades Especiais?">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="325.0" layoutY="381.0" text="Temperamento">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="325.0" layoutY="426.0" text="Sociabilidade">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="325.0" layoutY="477.0" text="Observações gerais">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="txtareaObsGerais" layoutX="508.0" layoutY="477.0" prefHeight="170.0" prefWidth="190.0" />
+                        <Button fx:id="btCadastrar" layoutX="507.0" layoutY="672.0" mnemonicParsing="false" onAction="#CadastroAnimais" text="Cadastrar" />
+                        <Button fx:id="btLimpar" layoutX="632.0" layoutY="672.0" mnemonicParsing="false" text="Limpar" />
+                        <Label layoutX="325.0" layoutY="288.0" text="Peso">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtPeso" layoutX="505.0" layoutY="288.0" prefHeight="30.0" prefWidth="190.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Listagem">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabelaID" prefHeight="650.0" prefWidth="1200.0">
+                          <columns>
+                            <TableColumn fx:id="colunaID" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="colunaNome" prefWidth="123.0" text="Nome" />
+                              <TableColumn fx:id="colunaEspecie" minWidth="0.0" prefWidth="130.0" text="Espécie" />
+                              <TableColumn fx:id="colunaRaca" prefWidth="140.0" text="Raça" />
+                              <TableColumn fx:id="colunaPeso" prefWidth="113.0" text="Peso" />
+                              <TableColumn fx:id="colunaNecessidades" minWidth="0.0" prefWidth="197.0" text="Necessidades Especiais?" />
+                              <TableColumn fx:id="colunaTemperamento" minWidth="0.0" prefWidth="136.0" text="Temperamento" />
+                              <TableColumn fx:id="colunaSociabilidade" minWidth="0.0" prefWidth="126.0" text="Sociabilidade" />
+                              <TableColumn fx:id="colunaObsGerais" prefWidth="159.0" text="Observações gerais" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btPesquisa" layoutX="269.0" layoutY="696.0" mnemonicParsing="false" text="Pesquisar" />
+                        <Button fx:id="btExcluir" layoutX="558.0" layoutY="674.0" mnemonicParsing="false" onAction="#deletaAnimais" text="Excluir">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btAlterar" layoutX="675.0" layoutY="674.0" mnemonicParsing="false" onAction="#abreAtualizacaoCampos" text="Alterar dados">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btAtualizar" layoutX="852.0" layoutY="674.0" mnemonicParsing="false" onAction="#preencheTabela" text="Atualizar tabela">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="cbPesquisa" layoutX="55.0" layoutY="666.0" prefHeight="30.0" prefWidth="200.0" promptText="Pesquisar por..." />
+                        <TextField fx:id="txtPesquisa" layoutX="55.0" layoutY="697.0" prefHeight="30.0" prefWidth="200.0" />
+                        <Button fx:id="btGerarPdf" layoutX="1045.0" layoutY="674.0" mnemonicParsing="false" onAction="#gerarPdf" text="Gerar PDF">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

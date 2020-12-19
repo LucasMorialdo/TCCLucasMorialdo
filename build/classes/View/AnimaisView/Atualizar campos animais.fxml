@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerAnimais.AtualizarCamposAnimaisController">
+   <children>
+      <Label layoutX="57.0" layoutY="23.0" text="Nome">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="74.0" text="Espécie">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="122.0" text="Raça">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="217.0" text="Necessidades Especiais?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="263.0" text="Temperamento">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="310.0" text="Sociabilidade">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="313.0" layoutY="23.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtEspecie" layoutX="313.0" layoutY="74.0" prefHeight="30.0" prefWidth="190.0" />
+      <TextField fx:id="txtRaca" layoutX="313.0" layoutY="122.0" prefHeight="30.0" prefWidth="190.0" />
+      <ComboBox fx:id="cbNecessidades" layoutX="314.0" layoutY="216.0" prefHeight="31.0" prefWidth="190.0" />
+      <ComboBox fx:id="cbTemperamento" layoutX="314.0" layoutY="262.0" prefHeight="31.0" prefWidth="190.0" />
+      <ComboBox fx:id="cbSociabilidade" layoutX="314.0" layoutY="309.0" prefHeight="31.0" prefWidth="190.0" />
+      <Button fx:id="btAtualizarDados" layoutX="55.0" layoutY="439.0" mnemonicParsing="false" onAction="#alterarDados" text="Atualizar informações">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btLimparCampos" layoutX="341.0" layoutY="439.0" mnemonicParsing="false" text="Limpar campos">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtareaObsGerais" layoutX="314.0" layoutY="354.0" prefHeight="60.0" prefWidth="190.0" />
+      <Label layoutX="55.0" layoutY="354.0" text="Observações Gerais">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="168.0" text="Peso">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPeso" layoutX="313.0" layoutY="167.0" prefHeight="31.0" prefWidth="190.0" />
+   </children>
+</AnchorPane>

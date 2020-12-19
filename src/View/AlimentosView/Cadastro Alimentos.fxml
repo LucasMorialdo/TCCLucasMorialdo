@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerAlimentos.CadastroAlimentosController">
+   <children>
+      <Label layoutX="91.0" layoutY="104.0" text="Nome do produto">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="155.0" text="Quantidade">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="208.0" text="Informações gerais">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="334.0" layoutY="104.0" />
+      <TextField fx:id="txtQuantidade" layoutX="334.0" layoutY="155.0" />
+      <TextField fx:id="txtInfoGeral" layoutX="334.0" layoutY="208.0" />
+      <Button fx:id="btCadastrar" layoutX="134.0" layoutY="294.0" mnemonicParsing="false" onAction="#CadastroAlimentos" text="Cadastrar" />
+      <Button fx:id="btSair" layoutX="405.0" layoutY="294.0" mnemonicParsing="false" text="Sair" />
+      <Text layoutX="91.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRO DE ALIMENTOS" wrappingWidth="434.37890625">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
